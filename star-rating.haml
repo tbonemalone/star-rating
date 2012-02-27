@@ -1,0 +1,52 @@
+!!! 5
+
+%html{:lang=>"en"}
+    %head
+        %meta{:charset=>"utf-8"}
+        %title Star rating
+
+        %meta{:name=>"description", :content=>""}
+        %meta{:name=>"author", :content=>""}
+
+        %link{:rel=>"stylesheet", :href=>"css/screen.css"}
+
+    %body
+        
+        #main
+            %h1 Star rating
+
+            %span.vendor Something.com.org
+            .rating
+                %span.star{:data=>{:rating=>"1"}}
+                %span.star{:data=>{:rating=>"2"}}
+                %span.star{:data=>{:rating=>"3"}}
+                %span.star{:data=>{:rating=>"4"}}
+                %span.star{:data=>{:rating=>"5"}}
+
+            %span.clear Erase stars
+
+        %script{:src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", :type=>"text/javascript"}
+        
+        :javascript
+            $(document).ready(function(){
+                console.log('ready');
+
+                $('.star').hover(function() {
+                    $(this).prevAll().andSelf().addClass('on');
+                    $(this).nextAll().removeClass('on');
+                },
+
+                function() {
+                    $(this).prevAll().andSelf().removeClass('on');
+                })
+
+                $('.star').click(function() {
+                    $(this).prevAll().andSelf().addClass('selected');
+                });
+
+                $('.clear').click(function() {
+                    $('.rating').children().removeClass('selected');
+                    console.log($(this))
+                })
+            });
+

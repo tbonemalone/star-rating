@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Star rating</title>
+    <meta content='' name='description'>
+    <meta content='' name='author'>
+    <link href='css/screen.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='main'>
+      <h1>Star rating</h1>
+      <span class='vendor'>Something.com.org</span>
+      <div class='rating'>
+        <span class='star' data-rating='1'></span>
+        <span class='star' data-rating='2'></span>
+        <span class='star' data-rating='3'></span>
+        <span class='star' data-rating='4'></span>
+        <span class='star' data-rating='5'></span>
+      </div>
+      <span class='clear'>Erase stars</span>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+    <script>
+      //<![CDATA[
+        $(document).ready(function(){
+            console.log('ready');
+        
+            $('.star').hover(function() {
+                $(this).prevAll().andSelf().addClass('on');
+                $(this).nextAll().removeClass('on');
+            },
+        
+            function() {
+                $(this).prevAll().andSelf().removeClass('on');
+            })
+        
+            $('.star').click(function() {
+                $(this).prevAll().andSelf().addClass('selected');
+            });
+        
+            $('.clear').click(function() {
+                $('.rating').children().removeClass('selected');
+                console.log($(this))
+            })
+        });
+      //]]>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 10, ../sass/normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+/* line 16, ../sass/normalize.sass */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 24, ../sass/normalize.sass */
+audio:not([controls]), [hidden] {
+  display: none; }
+
+/* line 40, ../sass/normalize.sass */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  font-family: sans-serif; }
+
+/* line 52, ../sass/normalize.sass */
+button, input, select, textarea {
+  font-family: sans-serif; }
+
+/* line 58, ../sass/normalize.sass */
+body {
+  margin: 0; }
+
+/* line 69, ../sass/normalize.sass */
+a:focus {
+  outline: thin dotted; }
+/* line 71, ../sass/normalize.sass */
+a:hover, a:active {
+  outline: 0; }
+
+/* line 86, ../sass/normalize.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 90, ../sass/normalize.sass */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+/* line 94, ../sass/normalize.sass */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+/* line 98, ../sass/normalize.sass */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+/* line 102, ../sass/normalize.sass */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+/* line 106, ../sass/normalize.sass */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+/* line 112, ../sass/normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 117, ../sass/normalize.sass */
+b, strong {
+  font-weight: bold; }
+
+/* line 120, ../sass/normalize.sass */
+blockquote {
+  margin: 1em 40px; }
+
+/* line 125, ../sass/normalize.sass */
+dfn {
+  font-style: italic; }
+
+/* line 130, ../sass/normalize.sass */
+mark {
+  background: yellow;
+  color: black; }
+
+/* line 136, ../sass/normalize.sass */
+p {
+  margin: 1em 0; }
+
+/* line 139, ../sass/normalize.sass */
+pre {
+  margin: 1em 0;
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em; }
+
+/* line 150, ../sass/normalize.sass */
+code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em; }
+
+/* line 158, ../sass/normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* */
+/* 1 */
+/* line 169, ../sass/normalize.sass */
+q {
+  quotes: none; }
+  /* line 171, ../sass/normalize.sass */
+  q:before, q:after {
+    content: "";
+    content: none; }
+
+/* 2 */
+/* line 177, ../sass/normalize.sass */
+small {
+  font-size: 75%; }
+
+/* */
+/* line 184, ../sass/normalize.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 190, ../sass/normalize.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+/* line 197, ../sass/normalize.sass */
+sub {
+  bottom: -0.25em; }
+
+/* line 207, ../sass/normalize.sass */
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+/* line 210, ../sass/normalize.sass */
+dd {
+  margin: 0 0 0 40px; }
+
+/* line 216, ../sass/normalize.sass */
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+/* line 223, ../sass/normalize.sass */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 236, ../sass/normalize.sass */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/* Corrects overflow displayed oddly in IE9 */
+/* line 245, ../sass/normalize.sass */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE6/7/8/9, S5, O11 */
+/* line 255, ../sass/normalize.sass */
+figure, form {
+  margin: 0; }
+
+/* =============================================================================
+ * Forms
+ * ========================================================================== */
+/* Corrects margin displayed oddly in IE6/7 */
+/* Define consistent border, margin, and padding */
+/* line 268, ../sass/normalize.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7 */
+/* line 278, ../sass/normalize.sass */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/* 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers */
+/* line 292, ../sass/normalize.sass */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/* Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet */
+/* line 305, ../sass/normalize.sass */
+button, input {
+  line-height: normal;
+  /* 1 */ }
+
+/* 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6 */
+/* line 315, ../sass/normalize.sass */
+button {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/* line 324, ../sass/normalize.sass */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/* Re-set default cursor for disabled elements */
+/* line 335, ../sass/normalize.sass */
+button[disabled] {
+  cursor: default; }
+
+/* line 339, ../sass/normalize.sass */
+input[disabled] {
+  cursor: default; }
+/* line 341, ../sass/normalize.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+/* line 350, ../sass/normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */ }
+
+/* 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+ *    Known issue: excess padding remains in IE6 */
+/* 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+/* Removes inner padding and search cancel button in S5, Chrome on OS X */
+/* Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+/* line 374, ../sass/normalize.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers */
+/* line 382, ../sass/normalize.sass */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* =============================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells */
+/* line 395, ../sass/normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 12, ../sass/screen.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../sass/screen.sass */
+#main {
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 21, ../sass/screen.sass */
+.rating-box {
+  background-color: rgba(191, 64, 64, 0.8);
+  height: 200px; }
+
+/* line 26, ../sass/screen.sass */
+.rating {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* line 30, ../sass/screen.sass */
+.star {
+  background-color: rgba(191, 191, 64, 0.5);
+  padding: 46px;
+  background-image: url('data:image/png;base64,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');
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+  /* line 37, ../sass/screen.sass */
+  .star:hover {
+    background-position: -97px 0px; }
+  /* line 39, ../sass/screen.sass */
+  .star.on, .star.selected {
+    background-position: -97px 0px; }
+
+/* line 45, ../sass/screen.sass */
+.clear {
+  text-decoration: underline;
+  cursor: pointer; }
